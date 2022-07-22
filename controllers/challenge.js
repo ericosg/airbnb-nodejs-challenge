@@ -1,7 +1,7 @@
 'use strict';
 
 const DbService = require('../services/db');
-const haversine = require('haversine');
+const haversine = require('../helpers/haversine');
 
 class ChallengeController {
     async process(countPeople) {
