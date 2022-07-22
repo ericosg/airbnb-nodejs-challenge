@@ -34,7 +34,7 @@ class ChallengeController {
     }
 
     calculateFees(houses) {
-        return houses.reduce((p, c) => parseFloat(p.price ?? 0) + parseFloat(c.price ?? 0), 0);
+        return houses.reduce((p, c) => p + Number(c.price ?? 0), 0);
     }
 
     findCheapest(list) {
