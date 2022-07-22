@@ -1,9 +1,11 @@
+'use strict';
+
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/getCheapestFor/:countPeople', function (req, res, next) {
+  const countPeople = parseInt(req?.params?.countPeople);
+  res.json({ success: true, countPeople: countPeople })
 });
 
 module.exports = router;
