@@ -4,7 +4,7 @@ The code monkey and I debated that C# and Node.js will perform differently as AP
 ## Node.js vs C# Challenge:
 
 By using this dataset https://www.mongodb.com/docs/atlas/sample-data/sample-airbnb/
-create a API in C# that delivers an endpoint as a JSON result
+create a API in C# or Node.js that delivers an endpoint as a JSON result
 that returns houses ( `property_type` == `house` ) 
 can accommodate X people provided by the POST request
 using `accommodates` field
@@ -31,11 +31,17 @@ Note that the price must sum all the fees:
   }
 ```
 
-`guests_included` can be ignored
+All the fees must be added together and the `extra_people` charged per X.
 
-The distance must be calculated using the Haversine formula
+The field `guests_included` can be ignored.
+
+The distance must be calculated using the Haversine formula,
 and the algorithm must match within both solutions.
 
 The test cases are yet to be determined.
 
-The solution must run on the latest stable versions of both stacks, and must be able to run on Ubuntu and Linux.
+The solution must run on the latest stable versions of both stacks, 
+and must be able to run on Ubuntu and Windows.
+
+---
+This solution is the Node.js version.
